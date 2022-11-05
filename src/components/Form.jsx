@@ -49,14 +49,14 @@ export default function Form() {
                 <TextField
                     required
                     id="outlined-error-helper-text"
-                    label="Cedula"
+                    label="Cédula"
                     defaultValue=""
 
                 />
                 <TextField
                     required
                     id="outlined-error-helper-text"
-                    label="Telefono"
+                    label="Teléfono"
                     defaultValue=""
 
                 />
@@ -111,8 +111,8 @@ const sendData = () => {
           'x-ca-key': key,
           'x-ca-signature': signature,
           'x-ca-signature-headers': signatureHeaders,
-          'Content-Type': 'application/json',
           'Origin': 'http://localhost:3000',
+          'Allow-Control-Allow-Origin': '*',
           body: JSON.stringify(body)
       },
       body: JSON.stringify(body),
